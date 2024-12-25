@@ -26,6 +26,13 @@ This project showcases different AI capabilities:
    - Interactive prompt input for image generation
    - Example prompts for testing
 
+4. **Describe-and-Generate Game Functions**
+   - `image_to_base64_str()`: Converts PIL images to base64 strings
+   - `base64_to_pil()`: Converts base64 strings back to PIL images
+   - `captioner()`: Generates captions for images
+   - `generate()`: Creates images from text prompts
+   - `caption_and_generate()`: Combined function for the describe-and-generate game
+
 ### utils.py
 The `utils.py` file contains helper functions
 
@@ -37,12 +44,18 @@ All applications feature:
 
 ## Setup
 
-1. Install required packages: requirements.txt
+1. Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
 2. Set up your HuggingFace API token:
    - Go to https://huggingface.co/settings/tokens
    - Create a new token with "read" access
    - Create a `.env` file in your project root:
+```bash
+HF_API_KEY="your_token_here"
+```
 
 ## Project Structure
 
@@ -53,6 +66,7 @@ All applications feature:
 │   ├── L1_NLP_tasks_with_a_simple_interface.ipynb
 │   └── L2_Image_captioning_app.ipynb
 │   └── L3_Image_generation_app.ipynb
+│   └── L4_Describe_and_generate_game.ipynb
 │   └── utils.py
 ├── data/
 │   ├── christmas_dog.jpeg
@@ -82,7 +96,21 @@ The project includes several Jupyter notebooks demonstrating different AI capabi
    - Interactive Gradio interface for image generation
    - Example prompts included in data folder
 
+### 4. Describe and Generate Game
+   - Upload or select an image
+   - AI generates a description of the image
+   - Uses the description to generate a new image
+   - Compare original and AI-generated images
+   - Chain multiple generations to see how images evolv
+
 ## Usage
+
+Each notebook can be run independently and includes detailed instructions. The general workflow is:
+
+1. Set up environment and API keys
+2. Import required functions from utils.py
+3. Run the notebook cells sequentially
+4. Interact with the Gradio interfaces
 
 ### Basic usage with the API:
 
