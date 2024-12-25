@@ -18,6 +18,15 @@ This project showcases different AI capabilities:
    - Handles both uploaded images and image URLs
    - Includes example images for testing
 
+3. **Image Generation**
+   - Generates images based on text prompts
+   - Uses Stable Diffusion model
+   - Interactive prompt input for image generation
+   - Example prompts for testing
+
+### utils.py
+The `utils.py` file contains helper functions
+
 All applications feature:
 - HuggingFace Inference API integration
 - Local model fallback options
@@ -27,7 +36,6 @@ All applications feature:
 ## Setup
 
 1. Install required packages: requirements.txt
-
 
 2. Set up your HuggingFace API token:
    - Go to https://huggingface.co/settings/tokens
@@ -42,6 +50,8 @@ All applications feature:
 ├── code/
 │   ├── L1_NLP_tasks_with_a_simple_interface.ipynb
 │   └── L2_Image_captioning_app.ipynb
+│   └── L3_Image_generation_app.ipynb
+│   └── utils.py
 ├── data/
 │   ├── christmas_dog.jpeg
 │   ├── bird_flight.jpeg
@@ -64,6 +74,11 @@ The project includes several Jupyter notebooks demonstrating different AI capabi
    - Processes both uploaded images and image URLs
    - Interactive Gradio interface for image captioning
    - Example images included in data folder
+
+3. `L3_Image_generation_app.ipynb`
+   - Image generation using Stable Diffusion model
+   - Interactive Gradio interface for image generation
+   - Example prompts included in data folder
 
 ## Usage
 
