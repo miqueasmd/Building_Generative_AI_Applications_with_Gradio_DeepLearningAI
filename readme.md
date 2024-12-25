@@ -6,11 +6,12 @@ A collection of AI applications demonstrating various capabilities using Hugging
 
 This project showcases different AI capabilities:
 
-1. **Named Entity Recognition (NER)**
-   - Identifies people, organizations, and locations in text
-   - Uses `dslim/bert-base-NER` model
-   - Supports both API and local inference
-   - Interactive highlighting of identified entities
+1. **NLP Tasks with Simple Interface**
+   Build interfaces for various NLP tasks including:
+   - Text summarization using BART model
+   - Named Entity Recognition (NER) using BERT
+   - Token merging and entity highlighting
+   - Simple text processing applications
 
 2. **Image Captioning**
    - Generates natural language descriptions of images
@@ -64,10 +65,10 @@ All applications feature:
 The project includes several Jupyter notebooks demonstrating different AI capabilities:
 
 1. `L1_NLP_tasks_with_a_simple_interface.ipynb`
-   - Named Entity Recognition (NER) implementation
-   - Uses dslim/bert-base-NER model
-   - Demonstrates both API and local pipeline usage
-   - Interactive Gradio interface for NER
+   - Text summarization using BART model
+   - Named Entity Recognition (NER) using BERT
+   - Token merging and entity highlighting
+   - Simple text processing applications
 
 2. `L2_Image_captioning_app.ipynb`
    - Image captioning using BLIP model
