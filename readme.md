@@ -1,17 +1,28 @@
-# Named Entity Recognition (NER) with HuggingFace
+# Building Generative AI Applications with HuggingFace and Gradio
 
-This project implements a Named Entity Recognition system using HuggingFace's transformers library. It can work with both the HuggingFace Inference API and a local pipeline, providing a fallback mechanism for reliability.
+A collection of AI applications demonstrating various capabilities using HuggingFace's models and Gradio interfaces. This project includes Natural Language Processing (NER) and Computer Vision (Image Captioning) implementations, with both API and local inference options.
 
-## Features
+## Overview
 
-- Uses the `dslim/bert-base-NER` model for entity recognition
-- Supports both API and local inference
-- Graceful fallback from API to local pipeline
-- Interactive web interface using Gradio
-- Identifies entities like:
-  - Persons (PER)
-  - Organizations (ORG)
-  - Locations (LOC)
+This project showcases different AI capabilities:
+
+1. **Named Entity Recognition (NER)**
+   - Identifies people, organizations, and locations in text
+   - Uses `dslim/bert-base-NER` model
+   - Supports both API and local inference
+   - Interactive highlighting of identified entities
+
+2. **Image Captioning**
+   - Generates natural language descriptions of images
+   - Uses BLIP model from Salesforce
+   - Handles both uploaded images and image URLs
+   - Includes example images for testing
+
+All applications feature:
+- HuggingFace Inference API integration
+- Local model fallback options
+- Interactive Gradio web interfaces
+- Example inputs for testing
 
 ## Setup
 
@@ -23,6 +34,36 @@ This project implements a Named Entity Recognition system using HuggingFace's tr
    - Create a new token with "read" access
    - Create a `.env` file in your project root:
 
+## Project Structure
+
+```
+.
+├── README.md
+├── code/
+│   ├── L1_NLP_tasks_with_a_simple_interface.ipynb
+│   └── L2_Image_captioning_app.ipynb
+├── data/
+│   ├── christmas_dog.jpeg
+│   ├── bird_flight.jpeg
+│   └── cow.jpeg
+└── .env
+```
+
+## Notebooks
+
+The project includes several Jupyter notebooks demonstrating different AI capabilities:
+
+1. `L1_NLP_tasks_with_a_simple_interface.ipynb`
+   - Named Entity Recognition (NER) implementation
+   - Uses dslim/bert-base-NER model
+   - Demonstrates both API and local pipeline usage
+   - Interactive Gradio interface for NER
+
+2. `L2_Image_captioning_app.ipynb`
+   - Image captioning using BLIP model
+   - Processes both uploaded images and image URLs
+   - Interactive Gradio interface for image captioning
+   - Example images included in data folder
 
 ## Usage
 
