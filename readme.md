@@ -7,6 +7,7 @@ A collection of AI applications demonstrating various capabilities using Hugging
 This project showcases different AI capabilities:
 
 1. **NLP Tasks with Simple Interface**
+   
    Build interfaces for various NLP tasks including:
    - Text summarization using BART model
    - Named Entity Recognition (NER) using BERT
